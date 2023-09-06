@@ -1,5 +1,6 @@
 package com.fastcampus.projectboard.domain;
 
+import com.querydsl.core.types.EntityPath;
 import jakarta.persistence.*;
 import lombok.Setter;
 import lombok.ToString;
@@ -35,10 +36,6 @@ public class ArticleComment extends AuditingFields{
     @Setter
     @Column(nullable = false, length = 500)
     private String content;             // 댓글 내용
-
-    @CreatedDate
-    @Column(nullable = false)
-    private LocalDateTime createdAt;    // 생성일시
 
     protected ArticleComment(){
 
