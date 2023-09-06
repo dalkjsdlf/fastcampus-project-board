@@ -21,7 +21,7 @@ import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.
 @Transactional
 @DisplayName("DataRestTest")
 @SpringBootTest
-@Disabled
+@Disabled("Spring Data Rest 통합테스트는 불필요하므로 비활성화")
 public class DataRestTest {
 
     private MockMvc mockMvc;
